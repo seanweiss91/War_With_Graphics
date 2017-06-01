@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD14EABE1EE04FF500DD750C /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD14EABA1EE04FF500DD750C /* SDL2_image.framework */; };
+		FD14EABF1EE04FF500DD750C /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD14EABB1EE04FF500DD750C /* SDL2_mixer.framework */; };
+		FD14EAC01EE04FF500DD750C /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD14EABC1EE04FF500DD750C /* SDL2_ttf.framework */; };
+		FD14EAC11EE04FF500DD750C /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD14EABD1EE04FF500DD750C /* SDL2.framework */; };
+		FD14EAC21EE0531D00DD750C /* card.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD14EAB21EE04FB500DD750C /* card.cpp */; };
+		FD14EAC31EE0531D00DD750C /* cardDeck.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD14EAB31EE04FB500DD750C /* cardDeck.cpp */; };
+		FD14EAC41EE0531D00DD750C /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD14EAB41EE04FB500DD750C /* game.cpp */; };
+		FD14EAC51EE0531D00DD750C /* LTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD14EAB51EE04FB500DD750C /* LTexture.cpp */; };
+		FD14EAC61EE0531D00DD750C /* player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD14EAB61EE04FB500DD750C /* player.cpp */; };
+		FD14EAC71EE0531D00DD750C /* SDL_Functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD14EAB71EE04FB500DD750C /* SDL_Functions.cpp */; };
+		FD14EAC81EE0531D00DD750C /* War.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD14EAB81EE04FB500DD750C /* War.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD14EA4E1EE04F3F00DD750C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD14EA501EE04F3F00DD750C /* War_With_Graphics */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = War_With_Graphics; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD14EA5B1EE04FB500DD750C /* card.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = card.hpp; sourceTree = "<group>"; };
+		FD14EA5C1EE04FB500DD750C /* cardDeck.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = cardDeck.hpp; sourceTree = "<group>"; };
+		FD14EA5D1EE04FB500DD750C /* game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = game.hpp; sourceTree = "<group>"; };
+		FD14EA5E1EE04FB500DD750C /* LTexture.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LTexture.hpp; sourceTree = "<group>"; };
+		FD14EA5F1EE04FB500DD750C /* player.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = player.hpp; sourceTree = "<group>"; };
+		FD14EA601EE04FB500DD750C /* SDL_Functions.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = SDL_Functions.hpp; sourceTree = "<group>"; };
+		FD14EA611EE04FB500DD750C /* War.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = War.hpp; sourceTree = "<group>"; };
+		FD14EA631EE04FB500DD750C /* CardDeckSpriteSheet.tps */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CardDeckSpriteSheet.tps; sourceTree = "<group>"; };
+		FD14EA651EE04FB500DD750C /* JAK_ARTA.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = JAK_ARTA.ttf; sourceTree = "<group>"; };
+		FD14EA661EE04FB500DD750C /* lazy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = lazy.ttf; sourceTree = "<group>"; };
+		FD14EA671EE04FB500DD750C /* orange_juice.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = orange_juice.ttf; sourceTree = "<group>"; };
+		FD14EA691EE04FB500DD750C /* 10_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10_of_clubs.png; sourceTree = "<group>"; };
+		FD14EA6A1EE04FB500DD750C /* 10_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10_of_diamonds.png; sourceTree = "<group>"; };
+		FD14EA6B1EE04FB500DD750C /* 10_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10_of_hearts.png; sourceTree = "<group>"; };
+		FD14EA6C1EE04FB500DD750C /* 10_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10_of_spades.png; sourceTree = "<group>"; };
+		FD14EA6D1EE04FB500DD750C /* 11_jack_of_clubs2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11_jack_of_clubs2.png; sourceTree = "<group>"; };
+		FD14EA6E1EE04FB500DD750C /* 11_jack_of_diamonds2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11_jack_of_diamonds2.png; sourceTree = "<group>"; };
+		FD14EA6F1EE04FB500DD750C /* 11_jack_of_hearts2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11_jack_of_hearts2.png; sourceTree = "<group>"; };
+		FD14EA701EE04FB500DD750C /* 11_jack_of_spades2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11_jack_of_spades2.png; sourceTree = "<group>"; };
+		FD14EA711EE04FB500DD750C /* 12_queen_of_clubs2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12_queen_of_clubs2.png; sourceTree = "<group>"; };
+		FD14EA721EE04FB500DD750C /* 12_queen_of_diamonds2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12_queen_of_diamonds2.png; sourceTree = "<group>"; };
+		FD14EA731EE04FB500DD750C /* 12_queen_of_hearts2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12_queen_of_hearts2.png; sourceTree = "<group>"; };
+		FD14EA741EE04FB500DD750C /* 12_queen_of_spades2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12_queen_of_spades2.png; sourceTree = "<group>"; };
+		FD14EA751EE04FB500DD750C /* 13_king_of_clubs2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13_king_of_clubs2.png; sourceTree = "<group>"; };
+		FD14EA761EE04FB500DD750C /* 13_king_of_diamonds2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13_king_of_diamonds2.png; sourceTree = "<group>"; };
+		FD14EA771EE04FB500DD750C /* 13_king_of_hearts2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13_king_of_hearts2.png; sourceTree = "<group>"; };
+		FD14EA781EE04FB500DD750C /* 13_king_of_spades2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 13_king_of_spades2.png; sourceTree = "<group>"; };
+		FD14EA791EE04FB500DD750C /* 14_ace_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14_ace_of_clubs.png; sourceTree = "<group>"; };
+		FD14EA7A1EE04FB500DD750C /* 14_ace_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14_ace_of_diamonds.png; sourceTree = "<group>"; };
+		FD14EA7B1EE04FB500DD750C /* 14_ace_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14_ace_of_hearts.png; sourceTree = "<group>"; };
+		FD14EA7C1EE04FB500DD750C /* 14_ace_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 14_ace_of_spades.png; sourceTree = "<group>"; };
+		FD14EA7D1EE04FB500DD750C /* 15_black_joker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15_black_joker.png; sourceTree = "<group>"; };
+		FD14EA7E1EE04FB500DD750C /* 15_red_joker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 15_red_joker.png; sourceTree = "<group>"; };
+		FD14EA7F1EE04FB500DD750C /* 2_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_of_clubs.png; sourceTree = "<group>"; };
+		FD14EA801EE04FB500DD750C /* 2_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_of_diamonds.png; sourceTree = "<group>"; };
+		FD14EA811EE04FB500DD750C /* 2_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_of_hearts.png; sourceTree = "<group>"; };
+		FD14EA821EE04FB500DD750C /* 2_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_of_spades.png; sourceTree = "<group>"; };
+		FD14EA831EE04FB500DD750C /* 3_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_of_clubs.png; sourceTree = "<group>"; };
+		FD14EA841EE04FB500DD750C /* 3_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_of_diamonds.png; sourceTree = "<group>"; };
+		FD14EA851EE04FB500DD750C /* 3_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_of_hearts.png; sourceTree = "<group>"; };
+		FD14EA861EE04FB500DD750C /* 3_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_of_spades.png; sourceTree = "<group>"; };
+		FD14EA871EE04FB500DD750C /* 4_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_of_clubs.png; sourceTree = "<group>"; };
+		FD14EA881EE04FB500DD750C /* 4_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_of_diamonds.png; sourceTree = "<group>"; };
+		FD14EA891EE04FB500DD750C /* 4_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_of_hearts.png; sourceTree = "<group>"; };
+		FD14EA8A1EE04FB500DD750C /* 4_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_of_spades.png; sourceTree = "<group>"; };
+		FD14EA8B1EE04FB500DD750C /* 5_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_of_clubs.png; sourceTree = "<group>"; };
+		FD14EA8C1EE04FB500DD750C /* 5_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_of_diamonds.png; sourceTree = "<group>"; };
+		FD14EA8D1EE04FB500DD750C /* 5_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_of_hearts.png; sourceTree = "<group>"; };
+		FD14EA8E1EE04FB500DD750C /* 5_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_of_spades.png; sourceTree = "<group>"; };
+		FD14EA8F1EE04FB500DD750C /* 6_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_of_clubs.png; sourceTree = "<group>"; };
+		FD14EA901EE04FB500DD750C /* 6_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_of_diamonds.png; sourceTree = "<group>"; };
+		FD14EA911EE04FB500DD750C /* 6_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_of_hearts.png; sourceTree = "<group>"; };
+		FD14EA921EE04FB500DD750C /* 6_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_of_spades.png; sourceTree = "<group>"; };
+		FD14EA931EE04FB500DD750C /* 7_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_of_clubs.png; sourceTree = "<group>"; };
+		FD14EA941EE04FB500DD750C /* 7_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_of_diamonds.png; sourceTree = "<group>"; };
+		FD14EA951EE04FB500DD750C /* 7_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_of_hearts.png; sourceTree = "<group>"; };
+		FD14EA961EE04FB500DD750C /* 7_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_of_spades.png; sourceTree = "<group>"; };
+		FD14EA971EE04FB500DD750C /* 8_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_of_clubs.png; sourceTree = "<group>"; };
+		FD14EA981EE04FB500DD750C /* 8_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_of_diamonds.png; sourceTree = "<group>"; };
+		FD14EA991EE04FB500DD750C /* 8_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_of_hearts.png; sourceTree = "<group>"; };
+		FD14EA9A1EE04FB500DD750C /* 8_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_of_spades.png; sourceTree = "<group>"; };
+		FD14EA9B1EE04FB500DD750C /* 9_of_clubs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_of_clubs.png; sourceTree = "<group>"; };
+		FD14EA9C1EE04FB500DD750C /* 9_of_diamonds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_of_diamonds.png; sourceTree = "<group>"; };
+		FD14EA9D1EE04FB500DD750C /* 9_of_hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_of_hearts.png; sourceTree = "<group>"; };
+		FD14EA9E1EE04FB500DD750C /* 9_of_spades.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_of_spades.png; sourceTree = "<group>"; };
+		FD14EA9F1EE04FB500DD750C /* PlayingDeckSpriteSheet-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PlayingDeckSpriteSheet-0.png"; sourceTree = "<group>"; };
+		FD14EAA01EE04FB500DD750C /* Table.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Table.jpg; sourceTree = "<group>"; };
+		FD14EAA31EE04FB500DD750C /* cuckoo.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cuckoo.wav; sourceTree = "<group>"; };
+		FD14EAA41EE04FB500DD750C /* draw.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = draw.wav; sourceTree = "<group>"; };
+		FD14EAA51EE04FB500DD750C /* error.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = error.wav; sourceTree = "<group>"; };
+		FD14EAA61EE04FB500DD750C /* error2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = error2.wav; sourceTree = "<group>"; };
+		FD14EAA71EE04FB500DD750C /* Passturn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Passturn.wav; sourceTree = "<group>"; };
+		FD14EAA81EE04FB500DD750C /* Passturn2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Passturn2.wav; sourceTree = "<group>"; };
+		FD14EAA91EE04FB500DD750C /* playcard.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = playcard.wav; sourceTree = "<group>"; };
+		FD14EAAA1EE04FB500DD750C /* rolldie.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = rolldie.wav; sourceTree = "<group>"; };
+		FD14EAAB1EE04FB500DD750C /* shuffle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shuffle.wav; sourceTree = "<group>"; };
+		FD14EAAC1EE04FB500DD750C /* stagechangeoldnotification.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = stagechangeoldnotification.wav; sourceTree = "<group>"; };
+		FD14EAAD1EE04FB500DD750C /* tap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tap.wav; sourceTree = "<group>"; };
+		FD14EAAE1EE04FB500DD750C /* untap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = untap.wav; sourceTree = "<group>"; };
+		FD14EAAF1EE04FB500DD750C /* WAR.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = WAR.wav; sourceTree = "<group>"; };
+		FD14EAB01EE04FB500DD750C /* Castlevania.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Castlevania.wav; sourceTree = "<group>"; };
+		FD14EAB21EE04FB500DD750C /* card.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = card.cpp; sourceTree = "<group>"; };
+		FD14EAB31EE04FB500DD750C /* cardDeck.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cardDeck.cpp; sourceTree = "<group>"; };
+		FD14EAB41EE04FB500DD750C /* game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = game.cpp; sourceTree = "<group>"; };
+		FD14EAB51EE04FB500DD750C /* LTexture.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LTexture.cpp; sourceTree = "<group>"; };
+		FD14EAB61EE04FB500DD750C /* player.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = player.cpp; sourceTree = "<group>"; };
+		FD14EAB71EE04FB500DD750C /* SDL_Functions.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SDL_Functions.cpp; sourceTree = "<group>"; };
+		FD14EAB81EE04FB500DD750C /* War.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = War.cpp; sourceTree = "<group>"; };
+		FD14EABA1EE04FF500DD750C /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		FD14EABB1EE04FF500DD750C /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		FD14EABC1EE04FF500DD750C /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		FD14EABD1EE04FF500DD750C /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD14EA4D1EE04F3F00DD750C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD14EABE1EE04FF500DD750C /* SDL2_image.framework in Frameworks */,
+				FD14EABF1EE04FF500DD750C /* SDL2_mixer.framework in Frameworks */,
+				FD14EAC01EE04FF500DD750C /* SDL2_ttf.framework in Frameworks */,
+				FD14EAC11EE04FF500DD750C /* SDL2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD14EA471EE04F3F00DD750C = {
+			isa = PBXGroup;
+			children = (
+				FD14EA521EE04F3F00DD750C /* War_With_Graphics */,
+				FD14EA511EE04F3F00DD750C /* Products */,
+				FD14EAB91EE04FF500DD750C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD14EA511EE04F3F00DD750C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD14EA501EE04F3F00DD750C /* War_With_Graphics */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD14EA521EE04F3F00DD750C /* War_With_Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				FD14EA5A1EE04FB500DD750C /* Headers */,
+				FD14EA621EE04FB500DD750C /* ImageFiles */,
+				FD14EAA11EE04FB500DD750C /* SoundFiles */,
+				FD14EAB11EE04FB500DD750C /* Source */,
+			);
+			path = War_With_Graphics;
+			sourceTree = "<group>";
+		};
+		FD14EA5A1EE04FB500DD750C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				FD14EA5B1EE04FB500DD750C /* card.hpp */,
+				FD14EA5C1EE04FB500DD750C /* cardDeck.hpp */,
+				FD14EA5D1EE04FB500DD750C /* game.hpp */,
+				FD14EA5E1EE04FB500DD750C /* LTexture.hpp */,
+				FD14EA5F1EE04FB500DD750C /* player.hpp */,
+				FD14EA601EE04FB500DD750C /* SDL_Functions.hpp */,
+				FD14EA611EE04FB500DD750C /* War.hpp */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		FD14EA621EE04FB500DD750C /* ImageFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FD14EA631EE04FB500DD750C /* CardDeckSpriteSheet.tps */,
+				FD14EA641EE04FB500DD750C /* FontFiles */,
+				FD14EA681EE04FB500DD750C /* PlayingCardsPNG */,
+				FD14EA9F1EE04FB500DD750C /* PlayingDeckSpriteSheet-0.png */,
+				FD14EAA01EE04FB500DD750C /* Table.jpg */,
+			);
+			path = ImageFiles;
+			sourceTree = "<group>";
+		};
+		FD14EA641EE04FB500DD750C /* FontFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FD14EA651EE04FB500DD750C /* JAK_ARTA.ttf */,
+				FD14EA661EE04FB500DD750C /* lazy.ttf */,
+				FD14EA671EE04FB500DD750C /* orange_juice.ttf */,
+			);
+			path = FontFiles;
+			sourceTree = "<group>";
+		};
+		FD14EA681EE04FB500DD750C /* PlayingCardsPNG */ = {
+			isa = PBXGroup;
+			children = (
+				FD14EA691EE04FB500DD750C /* 10_of_clubs.png */,
+				FD14EA6A1EE04FB500DD750C /* 10_of_diamonds.png */,
+				FD14EA6B1EE04FB500DD750C /* 10_of_hearts.png */,
+				FD14EA6C1EE04FB500DD750C /* 10_of_spades.png */,
+				FD14EA6D1EE04FB500DD750C /* 11_jack_of_clubs2.png */,
+				FD14EA6E1EE04FB500DD750C /* 11_jack_of_diamonds2.png */,
+				FD14EA6F1EE04FB500DD750C /* 11_jack_of_hearts2.png */,
+				FD14EA701EE04FB500DD750C /* 11_jack_of_spades2.png */,
+				FD14EA711EE04FB500DD750C /* 12_queen_of_clubs2.png */,
+				FD14EA721EE04FB500DD750C /* 12_queen_of_diamonds2.png */,
+				FD14EA731EE04FB500DD750C /* 12_queen_of_hearts2.png */,
+				FD14EA741EE04FB500DD750C /* 12_queen_of_spades2.png */,
+				FD14EA751EE04FB500DD750C /* 13_king_of_clubs2.png */,
+				FD14EA761EE04FB500DD750C /* 13_king_of_diamonds2.png */,
+				FD14EA771EE04FB500DD750C /* 13_king_of_hearts2.png */,
+				FD14EA781EE04FB500DD750C /* 13_king_of_spades2.png */,
+				FD14EA791EE04FB500DD750C /* 14_ace_of_clubs.png */,
+				FD14EA7A1EE04FB500DD750C /* 14_ace_of_diamonds.png */,
+				FD14EA7B1EE04FB500DD750C /* 14_ace_of_hearts.png */,
+				FD14EA7C1EE04FB500DD750C /* 14_ace_of_spades.png */,
+				FD14EA7D1EE04FB500DD750C /* 15_black_joker.png */,
+				FD14EA7E1EE04FB500DD750C /* 15_red_joker.png */,
+				FD14EA7F1EE04FB500DD750C /* 2_of_clubs.png */,
+				FD14EA801EE04FB500DD750C /* 2_of_diamonds.png */,
+				FD14EA811EE04FB500DD750C /* 2_of_hearts.png */,
+				FD14EA821EE04FB500DD750C /* 2_of_spades.png */,
+				FD14EA831EE04FB500DD750C /* 3_of_clubs.png */,
+				FD14EA841EE04FB500DD750C /* 3_of_diamonds.png */,
+				FD14EA851EE04FB500DD750C /* 3_of_hearts.png */,
+				FD14EA861EE04FB500DD750C /* 3_of_spades.png */,
+				FD14EA871EE04FB500DD750C /* 4_of_clubs.png */,
+				FD14EA881EE04FB500DD750C /* 4_of_diamonds.png */,
+				FD14EA891EE04FB500DD750C /* 4_of_hearts.png */,
+				FD14EA8A1EE04FB500DD750C /* 4_of_spades.png */,
+				FD14EA8B1EE04FB500DD750C /* 5_of_clubs.png */,
+				FD14EA8C1EE04FB500DD750C /* 5_of_diamonds.png */,
+				FD14EA8D1EE04FB500DD750C /* 5_of_hearts.png */,
+				FD14EA8E1EE04FB500DD750C /* 5_of_spades.png */,
+				FD14EA8F1EE04FB500DD750C /* 6_of_clubs.png */,
+				FD14EA901EE04FB500DD750C /* 6_of_diamonds.png */,
+				FD14EA911EE04FB500DD750C /* 6_of_hearts.png */,
+				FD14EA921EE04FB500DD750C /* 6_of_spades.png */,
+				FD14EA931EE04FB500DD750C /* 7_of_clubs.png */,
+				FD14EA941EE04FB500DD750C /* 7_of_diamonds.png */,
+				FD14EA951EE04FB500DD750C /* 7_of_hearts.png */,
+				FD14EA961EE04FB500DD750C /* 7_of_spades.png */,
+				FD14EA971EE04FB500DD750C /* 8_of_clubs.png */,
+				FD14EA981EE04FB500DD750C /* 8_of_diamonds.png */,
+				FD14EA991EE04FB500DD750C /* 8_of_hearts.png */,
+				FD14EA9A1EE04FB500DD750C /* 8_of_spades.png */,
+				FD14EA9B1EE04FB500DD750C /* 9_of_clubs.png */,
+				FD14EA9C1EE04FB500DD750C /* 9_of_diamonds.png */,
+				FD14EA9D1EE04FB500DD750C /* 9_of_hearts.png */,
+				FD14EA9E1EE04FB500DD750C /* 9_of_spades.png */,
+			);
+			path = PlayingCardsPNG;
+			sourceTree = "<group>";
+		};
+		FD14EAA11EE04FB500DD750C /* SoundFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FD14EAA21EE04FB500DD750C /* CardSounds */,
+				FD14EAB01EE04FB500DD750C /* Castlevania.wav */,
+			);
+			path = SoundFiles;
+			sourceTree = "<group>";
+		};
+		FD14EAA21EE04FB500DD750C /* CardSounds */ = {
+			isa = PBXGroup;
+			children = (
+				FD14EAA31EE04FB500DD750C /* cuckoo.wav */,
+				FD14EAA41EE04FB500DD750C /* draw.wav */,
+				FD14EAA51EE04FB500DD750C /* error.wav */,
+				FD14EAA61EE04FB500DD750C /* error2.wav */,
+				FD14EAA71EE04FB500DD750C /* Passturn.wav */,
+				FD14EAA81EE04FB500DD750C /* Passturn2.wav */,
+				FD14EAA91EE04FB500DD750C /* playcard.wav */,
+				FD14EAAA1EE04FB500DD750C /* rolldie.wav */,
+				FD14EAAB1EE04FB500DD750C /* shuffle.wav */,
+				FD14EAAC1EE04FB500DD750C /* stagechangeoldnotification.wav */,
+				FD14EAAD1EE04FB500DD750C /* tap.wav */,
+				FD14EAAE1EE04FB500DD750C /* untap.wav */,
+				FD14EAAF1EE04FB500DD750C /* WAR.wav */,
+			);
+			path = CardSounds;
+			sourceTree = "<group>";
+		};
+		FD14EAB11EE04FB500DD750C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				FD14EAB21EE04FB500DD750C /* card.cpp */,
+				FD14EAB31EE04FB500DD750C /* cardDeck.cpp */,
+				FD14EAB41EE04FB500DD750C /* game.cpp */,
+				FD14EAB51EE04FB500DD750C /* LTexture.cpp */,
+				FD14EAB61EE04FB500DD750C /* player.cpp */,
+				FD14EAB71EE04FB500DD750C /* SDL_Functions.cpp */,
+				FD14EAB81EE04FB500DD750C /* War.cpp */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		FD14EAB91EE04FF500DD750C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD14EABA1EE04FF500DD750C /* SDL2_image.framework */,
+				FD14EABB1EE04FF500DD750C /* SDL2_mixer.framework */,
+				FD14EABC1EE04FF500DD750C /* SDL2_ttf.framework */,
+				FD14EABD1EE04FF500DD750C /* SDL2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD14EA4F1EE04F3F00DD750C /* War_With_Graphics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD14EA571EE04F3F00DD750C /* Build configuration list for PBXNativeTarget "War_With_Graphics" */;
+			buildPhases = (
+				FD14EA4C1EE04F3F00DD750C /* Sources */,
+				FD14EA4D1EE04F3F00DD750C /* Frameworks */,
+				FD14EA4E1EE04F3F00DD750C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = War_With_Graphics;
+			productName = War_With_Graphics;
+			productReference = FD14EA501EE04F3F00DD750C /* War_With_Graphics */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD14EA481EE04F3F00DD750C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Sean Weiss";
+				TargetAttributes = {
+					FD14EA4F1EE04F3F00DD750C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FD14EA4B1EE04F3F00DD750C /* Build configuration list for PBXProject "War_With_Graphics" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD14EA471EE04F3F00DD750C;
+			productRefGroup = FD14EA511EE04F3F00DD750C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD14EA4F1EE04F3F00DD750C /* War_With_Graphics */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD14EA4C1EE04F3F00DD750C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD14EAC21EE0531D00DD750C /* card.cpp in Sources */,
+				FD14EAC31EE0531D00DD750C /* cardDeck.cpp in Sources */,
+				FD14EAC41EE0531D00DD750C /* game.cpp in Sources */,
+				FD14EAC51EE0531D00DD750C /* LTexture.cpp in Sources */,
+				FD14EAC61EE0531D00DD750C /* player.cpp in Sources */,
+				FD14EAC71EE0531D00DD750C /* SDL_Functions.cpp in Sources */,
+				FD14EAC81EE0531D00DD750C /* War.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FD14EA551EE04F3F00DD750C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FD14EA561EE04F3F00DD750C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FD14EA581EE04F3F00DD750C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD14EA591EE04F3F00DD750C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD14EA4B1EE04F3F00DD750C /* Build configuration list for PBXProject "War_With_Graphics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD14EA551EE04F3F00DD750C /* Debug */,
+				FD14EA561EE04F3F00DD750C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD14EA571EE04F3F00DD750C /* Build configuration list for PBXNativeTarget "War_With_Graphics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD14EA581EE04F3F00DD750C /* Debug */,
+				FD14EA591EE04F3F00DD750C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD14EA481EE04F3F00DD750C /* Project object */;
+}
