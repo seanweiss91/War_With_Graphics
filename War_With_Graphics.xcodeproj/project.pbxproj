@@ -126,6 +126,8 @@
 		FD14EABB1EE04FF500DD750C /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
 		FD14EABC1EE04FF500DD750C /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
 		FD14EABD1EE04FF500DD750C /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		FDDC9DAD1EE5D39600A03D15 /* ARABIAN KNIGHT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ARABIAN KNIGHT.ttf"; sourceTree = "<group>"; };
+		FDDC9DAE1EE5D49600A03D15 /* Top Secret Stamp.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Top Secret Stamp.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,10 +165,10 @@
 		FD14EA521EE04F3F00DD750C /* War_With_Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				FD14EAB11EE04FB500DD750C /* Source */,
 				FD14EA5A1EE04FB500DD750C /* Headers */,
 				FD14EA621EE04FB500DD750C /* ImageFiles */,
 				FD14EAA11EE04FB500DD750C /* SoundFiles */,
-				FD14EAB11EE04FB500DD750C /* Source */,
 			);
 			path = War_With_Graphics;
 			sourceTree = "<group>";
@@ -200,6 +202,8 @@
 		FD14EA641EE04FB500DD750C /* FontFiles */ = {
 			isa = PBXGroup;
 			children = (
+				FDDC9DAE1EE5D49600A03D15 /* Top Secret Stamp.ttf */,
+				FDDC9DAD1EE5D39600A03D15 /* ARABIAN KNIGHT.ttf */,
 				FD14EA651EE04FB500DD750C /* JAK_ARTA.ttf */,
 				FD14EA661EE04FB500DD750C /* lazy.ttf */,
 				FD14EA671EE04FB500DD750C /* orange_juice.ttf */,

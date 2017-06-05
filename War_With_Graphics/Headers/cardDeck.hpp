@@ -64,4 +64,5 @@ private:
     int numCards;
 };
 
+extern int myrandom (int i);
 #endif /* cardDeck_hpp */

@@ -13,6 +13,7 @@
 #include "card.hpp"
 #include "game.hpp"
 #include "player.hpp"
+#include "SDL_Functions.hpp"
 
 class War: public game
 {
@@ -60,6 +61,10 @@ public:
     void updateNumText(player &player);
     
     void renderCardsInHandLabel ( );
+    
+    void animateDealingCardsToPlayers ( cardDeck &deck );
+    
+    void animateSingleCard ( vector<card>::iterator currCard, vector<card>::iterator end, vector<Points> array, int i, int numPointsOnCurve, int buffer );
     
 private:
     

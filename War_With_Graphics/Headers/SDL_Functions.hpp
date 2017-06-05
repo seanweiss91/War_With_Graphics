@@ -102,5 +102,16 @@ void render( int x, int y, SDL_Rect* clip );
 
 SDL_Texture* loadFromRenderedText( std::string textureText, SDL_Color textColor );
 
+SDL_Texture* loadTextFromRenderedText( std::string textureText, SDL_Color textColor, SDL_Texture* textTexture );
+
+struct Points
+{
+    Points(float x, float y) : x(x), y(y) {}
+    float x;
+    float y;
+};
+
+extern void getCubicBezierCurve( Points p0, Points p1, Points p2, float t, int numPointsOnCurve, std::vector<Points> &array );
+
 
 #endif /* SDL_Functions_h */

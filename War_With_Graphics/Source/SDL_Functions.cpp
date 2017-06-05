@@ -11,6 +11,7 @@
 #include "War.hpp"
 #include <ctime>        // std::time
 #include <cstdlib>
+#include <math.h>
 
 
 //Using SDL and standard IO
@@ -251,7 +252,7 @@ bool loadMedia()
     }
     
     //Open the font
-    gFont = TTF_OpenFont( "ImageFiles/FontFiles/orange_juice.ttf", 28 );
+    gFont = TTF_OpenFont( "ImageFiles/FontFiles/Top Secret Stamp.ttf", 28 );
     if( gFont == NULL )
     {
         printf( "Failed to load lazy font! SDL_ttf Error: %s\n", TTF_GetError() );
@@ -379,4 +380,60 @@ SDL_Texture* loadFromRenderedText( std::string textureText, SDL_Color textColor 
     
     //Return success
     return gText_Texture;
+}
+
+/* Similar to loadFromRenderedText but takes in a paramter of an SDL texture */
+SDL_Texture* loadTextFromRenderedText( std::string textureText, SDL_Color textColor, SDL_Texture* textTexture )
+{
+    //Get rid of preexisting texture
+    SDL_DestroyTexture( textTexture );
+    textTexture = NULL;
+    
+    //Render text surface
+    SDL_Surface* textSurface = TTF_RenderText_Solid( gFont, textureText.c_str(), textColor );
+    if( textSurface == NULL )
+    {
+        printf( "Unable to render text surface! SDL_ttf Error: %s\n", TTF_GetError() );
+    }
+    else
+    {
+        //Create texture from surface pixels
+        textTexture = SDL_CreateTextureFromSurface( gRenderer, textSurface );
+        if( textTexture == NULL )
+        {
+            printf( "Unable to create texture from rendered text! SDL Error: %s\n", SDL_GetError() );
+        }
+        
+        //Get rid of old surface
+        SDL_FreeSurface( textSurface );
+    }
+    
+    //Return success
+    return textTexture;
+}
+
+// ******************** Playing with bezier curves **********************
+
+
+
+void getCubicBezierCurve( Points p0, Points p1, Points p2, float t, int numPointsOnCurve, vector<Points> &array )
+{
+    float tTemp = t;
+    for ( int i = 0; i < numPointsOnCurve; i++ )
+    {
+        
+        Points temp(0, 0);
+        
+        temp.x = ( ( pow(1-tTemp, 2) * p0.x ) + ( 2 * (1-tTemp) * tTemp * p1.x ) + ( pow( tTemp, 2 ) * p2.x ) );
+        temp.y = ( pow(1-tTemp, 2) * p0.y ) + ( 2 * (1-tTemp) * tTemp * p1.y ) + ( pow( tTemp, 2 ) * p2.y );
+        
+        temp.x = int(temp.x);
+        temp.y = int(temp.y);
+        
+        array.push_back(temp);
+        
+        tTemp += t;
+        
+    }
+    
 }
